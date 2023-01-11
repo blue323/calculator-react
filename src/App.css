@@ -1,0 +1,51 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#machine {
+  background-color: brown;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+#display {
+  text-align: center;
+  background-color: #fff;
+  width: 302px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  outline: 1px solid #242424;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.inputs{
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 50px);
+  grid-column-gap: 14px;
+  grid-row-gap: 10px;
+  width: 282px;
+  height: 290px;
+  outline: 1px solid #242424;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#equals {
+  grid-row: span 2;
+}
+
+#zero, #clear {
+  grid-column: span 2;
+}
+
+button:hover {
+  opacity: 0.6;
+}
